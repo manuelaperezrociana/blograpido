@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header_single.html" . -}}
+        <div id="content">
+
+    <!--==========================
+      Content Section
+    ============================-->
+    <section id="team" class="section-bg">
+        <div class="container">
+          <div class="section-header">
+            <p></p>
+             <ul>
+                 {{ range .Pages.ByDate.Reverse }}
+                 <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                 </li>
+                 {{ end }}
+                 </ul>.
+          </div>
+  
+          <div class="row">
+          </div>
+  
+        </div>
+      </section><!-- #content -->
+            
+        </div>
+        <p></p>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

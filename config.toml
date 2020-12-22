@@ -1,0 +1,12 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "rapid"
+
+[params]
+  author = "Sponville"
+  description = "Mi diario"
+
+[taxonomies]
+  categoria = "categorias"
+  etiqueta = "etiquetas"
